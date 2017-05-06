@@ -15,7 +15,17 @@ class Example(QtGui.QMainWindow):
 
     def initUI(self):
 
-        self.statusBar().showMessage('Ready')
+        exitAction = QtGui.QAction(QtGui.QIcon('exit.png'), '&Exit', self)
+        exitAction.setShortcut('Ctrl+Q')
+        exitAction.setStatusTip('Exit application')
+        exitAction.triggered.connect(QtGui.qApp.quit)
+
+        self.statusBar()
+        self.statusBar().showMessage('where is file menu?')
+
+        menubar = self.menuBar()
+        fileMenu = menubar.addMenu('&File')
+        fileMenu.addAction(exitAction)
 
         self.setGeometry(300, 100, 450, 450)
         self.setWindowTitle('First StatusBar')
