@@ -1,0 +1,2 @@
+本仓库所有素材来自 http://zetcode.com/gui/pyqt4
+感谢zetcode.com
