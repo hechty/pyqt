@@ -18,7 +18,7 @@ class Example(QtGui.QWidget):
         cancelButton = QtGui.QPushButton('Cancel')
         
         hbox = QtGui.QHBoxLayout()
-        hbox.addStretch(1)
+        hbox.addStretch(2)
         hbox.addWidget(okButton)
         hbox.addWidget(cancelButton)
 
